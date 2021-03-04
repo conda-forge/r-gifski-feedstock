@@ -12,5 +12,7 @@ pin_run_as_build:
     max_pin: x.x
 r_base:
 - '3.6'
+rust_compiler:
+- rust
 target_platform:
 - win-64
