@@ -21,7 +21,7 @@ build:
 
 requirements:
   build:
-    - {{ compiler('rust') }}
+    - rust
     - {{ compiler('c') }}              # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ posix }}filesystem        # [win]
