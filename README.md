@@ -3,6 +3,7 @@ About r-gifski-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gifski-feedstock/blob/main/LICENSE.txt)
 
+
 About r-gifski
 --------------
 
@@ -11,6 +12,7 @@ Home: https://gif.ski/ (upstream), https://github.com/r-rust/gifski (devel)
 Package license: MIT
 
 Summary: Multi-threaded GIF encoder written in Rust: <https://gif.ski/>.  Converts images to GIF animations using pngquant's efficient cross-frame  palettes and temporal dithering with thousands of colors per frame.
+
 About r-gifski
 --------------
 
