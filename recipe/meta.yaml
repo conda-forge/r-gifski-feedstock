@@ -14,6 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
+  skip: true              # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -22,8 +23,8 @@ build:
 requirements:
   build:
     - rust
-    - {{ compiler('c') }}              # [not win]
-    - {{ compiler('m2w64_c') }}        # [win]
+    - {{ compiler('c') }}          # [not win]
+    - {{ compiler('m2w64_c') }}    # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}sed               # [win]
     - {{ posix }}grep              # [win]
@@ -47,7 +48,8 @@ test:
     - "\"%R%\" -e \"library('gifski')\""  # [win]
 
 about:
-  home: https://gif.ski/ (upstream), https://github.com/r-rust/gifski (devel)
+  home: https://gif.ski/
+  dev_url: https://github.com/r-rust/gifski
   license: MIT
   summary: "Multi-threaded GIF encoder written in Rust: <https://gif.ski/>.  Converts images to GIF animations using pngquant's efficient cross-frame  palettes and temporal dithering with thousands of colors per frame."
   license_family: MIT
