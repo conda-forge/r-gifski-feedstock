@@ -1,4 +1,3 @@
 #!/bin/bash
 export DISABLE_AUTOBREW=1
-export MACOSX_DEPLOYMENT_TARGET=10.9
 ${R} CMD INSTALL --build . ${R_ARGS}
