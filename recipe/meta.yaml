@@ -1,4 +1,4 @@
-{% set version = "1.12.0-2" %}
+{% set version = "1.32.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,12 +9,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gifski_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gifski/gifski_{{ version }}.tar.gz
-  sha256: 281361b291a8d0df57444918f1d3cb8be404aa5f2749e96d777f884baa037b79
+  sha256: d1d10ac1522186813ca7f7045db92e18bf21246f397c4324c92ec34712424090
 
 build:
   # Checking windows to see if it passes. Uncomment the line if it fails.
   # skip: true              # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
